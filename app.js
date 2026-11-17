@@ -8,7 +8,7 @@ function scene(label='Шаурма на грилі з овочами, які р�
     ['0% 0%',-255,-190,-28,.93,'0s'],['50% 0%',60,-245,15,.91,'.22s'],['100% 0%',105,-75,-14,.88,'.12s'],
     ['0% 100%',-265,65,-22,.8,'.4s'],['50% 100%',95,130,25,.72,'.3s'],['100% 100%',-70,-290,28,.72,'.5s']
   ];
-  return `<div class="scene photo-scene" role="img" aria-label="${label}"><div class="halo"></div><div class="neon-corner"></div><img class="hero-wrap real-hero" src="${asset('shawarma-hand.jpg')}" alt="" aria-hidden="true">${items.map(v=>`<div class="ingredient" aria-hidden="true" style="--pos:${v[0]};--x:${v[1]}px;--y:${v[2]}px;--r:${v[3]}deg;--scale:${v[4]};--delay:${v[5]}"><div class="sprite"></div></div>`).join('')}</div>`;
+  return `<div class="scene photo-scene" role="img" aria-label="${label}"><div class="halo"></div><div class="neon-corner"></div><img class="hero-wrap real-hero" src="${asset('shawarma-cutout.png')}" alt="" aria-hidden="true">${items.map(v=>`<div class="ingredient" aria-hidden="true" style="--pos:${v[0]};--x:${v[1]}px;--y:${v[2]}px;--r:${v[3]}deg;--scale:${v[4]};--delay:${v[5]}"><div class="sprite"></div></div>`).join('')}</div>`;
 }
 const recipes=[
  {title:'Хрусткий лаваш',text:'Фінальний контакт із грилем дає виразний хрускіт та характерні смужки.'},
